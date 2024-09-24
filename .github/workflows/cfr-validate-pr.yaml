@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - "cloudformation/**"
+    types: [opened, synchronize, reopened, closed]
 
 # sets permissions for our GitHub Token
 permissions:
