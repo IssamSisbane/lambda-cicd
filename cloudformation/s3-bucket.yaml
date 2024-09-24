@@ -15,11 +15,11 @@ Resources:
     Type: "AWS::S3::Bucket"
     Properties:
       BucketName: !Sub "${AWS::StackName}-${Environment}-bucket"
-    Tags:
-      - Key: "Environment"
-        Value: !Ref Environment
-      - Key: "test"
-        Value: "This is a test tag"
+      Tags:
+        - Key: "Environment"
+          Value: !Ref Environment
+        - Key: "test"
+          Value: "This is a test tag"
 
 Outputs:
   BucketName:
